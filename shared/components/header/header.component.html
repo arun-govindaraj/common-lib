@@ -1,0 +1,114 @@
+<!--Desktop Header Start-->
+<div class="header desktop" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-6 col-xs-12 logo-width">
+        <div class="logo"> <a href="/globalAdminUsers"><img src="./assets/images/logo.gif"></a> </div>
+      </div>
+      <div class="col-md-9 col-sm-6 col-xs-12 mainmenu" *ngIf="isDataAvailable">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav main-menu">
+              <ng-template ngFor let-mm [ngForOf]="mainmenu" let-i="index">
+                <li [attr.data-index]="i+1" *ngIf="mm.name!='profile'">
+                  <a (click)="loadChildMenu(i)" title={{mm.name}} [ngClass]="isActive(i) ? 'active' : '' " >{{ mm.title | translate }}</a>
+                </li>
+              </ng-template>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 welcombob" *ngIf="isDataAvailable">
+        <div class="welcom-bob dropdown">
+          <button (click)="myFunction()" class="dropbtn"><img src="./assets/images/user-img.png"> Welcome {{ loggedInUser }} <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <ng-template ngFor let-smm [ngForOf]="mainmenu[mainmenu.length-1].submenu" let-i="index">
+                <a routerLink="/{{smm.url}}" [queryParams]="smm.queryValue" (click)="onLoggedout(smm.name);myFunction()">{{smm.title}}</a>
+            </ng-template>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom1">
+    <div class="row">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-3" *ngIf="isDataAvailable">
+            <ul class="nav navbar-nav bottom-menu">
+                <ng-template ngFor let-bmm [ngForOf]="subMenu" let-j="index" >
+                  <li><a routerLink="/{{bmm.url}}" routerLinkActive="active-bar" [routerLinkActiveOptions]="{exact: true}" (click)="activeMenu($event)" class="active-bar" title={{bmm.name}}>{{bmm.title}}</a></li>
+                </ng-template>
+
+              <!-- <li><a routerLink="/globalAdminUsers" routerLinkActive="active-bar">Global Operations</a></li>
+              <li><a routerLink="/editOrganization" routerLinkActive="active-bar">Organizations</a></li>
+              <li><a routerLink="/#" routerLinkActive="active-bar">Smart Contracts</a></li>
+              <li class="users"><a routerLink="/#" routerLinkActive="active-bar">Users</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!--End Desktop Header-->
+<!--Mobile Header Start-->
+<!-- <div class="mobile-header">
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-6 col-xs-6 logo-mobile-full">
+          <div class="logo"> <a href="#"><img src="./assets/images/logo.gif"></a> </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 logo-mobile-full">
+          <div class="welcom-bob dropdown">
+            <button (click)="myFunction()" class="dropbtn"><img src="./assets/images/user-img.png"> Welcome Bob <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <div id="myDropdown1" class="dropdown-content">
+              <a href="#">User Preferences</a>
+              <a href="#">Reset Password</a>
+              <a href="#" (click)="onLoggedout()">Log Out</a> </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-6 col-xs-12">
+          <div class="mobile-grey">
+            <nav id='cssmenu'>
+              <div id="head-mobile">Menu</div>
+              <div class="button"></div>
+              <ul>
+                <li><a href="#">Home</a>
+                  <ul class="drop-menu">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Landing Page</a></li>
+                    <li><a href="#">Users</a></li>
+                  </ul>
+                </li>
+                <li><a href='#'>Manage</a>
+                  <ul class="drop-menu">
+                    <li><a href="#">Global Operations</a>
+                      <ul class="icons-list">
+                        <li><a href="#"><span class="sitemap-menu"><i class="fa fa-user" aria-hidden="true"></i></span> F7 Admin Users</a></li>
+                        <li><a href="#"><span class="sitemap-menu"><i class="fa fa-list" aria-hidden="true"></i></span> Features List</a></li>
+                        <li><a href="#"><span class="sitemap-menu"><i class="fa fa-handshake-o" aria-hidden="true"></i></span> Partner Types</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Organizations</a></li>
+                    <li><a href="#">Smart Contracts</a></li>
+                    <li><a href="#">Users</a></li>
+                  </ul>
+                </li>
+                <li><a href='#'>Analytics</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!--Mobile Header end-->

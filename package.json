@@ -1,8 +1,8 @@
 {
-  "name": "hello",
+  "name": "common-lib",
   "version": "1.0.0",
   "description": "How to build libraries with Angular (2, 4, 5...)",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
