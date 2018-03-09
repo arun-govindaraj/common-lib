@@ -1,0 +1,13 @@
+<div class="main-content">
+  <div class="clearfix"></div>
+  <div class="table-content feature-content">
+    <div *ngIf="isDataAvailable">
+        <app-data-table (filterValues)="refreshData($event)" [data]="gridData"></app-data-table>
+    </div>
+    <div class="page-header" *ngIf="!isDataAvailable">
+      <h4>Loading data...</h4>
+    </div>
+    <ng2-slim-loading-bar></ng2-slim-loading-bar>
+
+  </div>
+</div>

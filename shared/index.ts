@@ -1,2 +1,2 @@
 export * from './components';
-export * from './guard/auth.guard';
+// export * from './guard/auth.guard';

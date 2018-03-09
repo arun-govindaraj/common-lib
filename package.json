@@ -1,22 +1,87 @@
 {
-  "name": "common-lib",
-  "version": "1.0.0",
+  "_args": [
+    [
+      {
+        "raw": "common-lib@git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+        "scope": null,
+        "escapedName": "common-lib",
+        "name": "common-lib",
+        "rawSpec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+        "spec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:arun-qfor/common-lib.git#v1.2",
+          "sshUrl": "git+ssh://git@github.com/arun-qfor/common-lib.git#v1.2",
+          "httpsUrl": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+          "gitUrl": "git://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+          "shortcut": "github:arun-qfor/common-lib#v1.2",
+          "directUrl": "https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@raw.githubusercontent.com/arun-qfor/common-lib/v1.2/package.json"
+        }
+      },
+      "/var/www/html/fs-root-webapp"
+    ]
+  ],
+  "_from": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+  "_id": "common-lib@1.0.0",
+  "_inCache": true,
+  "_location": "/common-lib",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "common-lib@git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+    "scope": null,
+    "escapedName": "common-lib",
+    "name": "common-lib",
+    "rawSpec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+    "spec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:arun-qfor/common-lib.git#v1.2",
+      "sshUrl": "git+ssh://git@github.com/arun-qfor/common-lib.git#v1.2",
+      "httpsUrl": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+      "gitUrl": "git://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+      "shortcut": "github:arun-qfor/common-lib#v1.2",
+      "directUrl": "https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@raw.githubusercontent.com/arun-qfor/common-lib/v1.2/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#aa460289b45b51e7cc5ad33213e19779cf7e6f67",
+  "_shasum": "013560d04111fbe8eb0dea8bbe297242fec52155",
+  "_shrinkwrap": null,
+  "_spec": "common-lib@git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
+  "_where": "/var/www/html/fs-root-webapp",
+  "author": {
+    "name": "arun@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/arun-qfor/custom-lib/issues"
+  },
+  "dependencies": {},
   "description": "How to build libraries with Angular (2, 4, 5...)",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arun-qfor/custom-lib"
-  },
+  "devDependencies": {},
+  "gitHead": "aa460289b45b51e7cc5ad33213e19779cf7e6f67",
+  "homepage": "https://github.com/arun-qfor/custom-lib#readme",
   "keywords": [
     "Angular",
     "Angular2",
     "Library",
     "Example"
   ],
-  "author": "arun@gmail.com",
   "license": "MIT",
-  "types": "index.d.ts"
+  "main": "index.ts",
+  "name": "common-lib",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun-qfor/custom-lib.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "index.d.ts",
+  "version": "1.0.0"
 }
