@@ -1,87 +1,93 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "common-lib@git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-        "scope": null,
-        "escapedName": "common-lib",
-        "name": "common-lib",
-        "rawSpec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-        "spec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:arun-qfor/common-lib.git#v1.2",
-          "sshUrl": "git+ssh://git@github.com/arun-qfor/common-lib.git#v1.2",
-          "httpsUrl": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-          "gitUrl": "git://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-          "shortcut": "github:arun-qfor/common-lib#v1.2",
-          "directUrl": "https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@raw.githubusercontent.com/arun-qfor/common-lib/v1.2/package.json"
-        }
-      },
-      "/var/www/html/fs-root-webapp"
-    ]
-  ],
-  "_from": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-  "_id": "common-lib@1.0.0",
-  "_inCache": true,
-  "_location": "/common-lib",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "common-lib@git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-    "scope": null,
-    "escapedName": "common-lib",
-    "name": "common-lib",
-    "rawSpec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-    "spec": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:arun-qfor/common-lib.git#v1.2",
-      "sshUrl": "git+ssh://git@github.com/arun-qfor/common-lib.git#v1.2",
-      "httpsUrl": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-      "gitUrl": "git://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-      "shortcut": "github:arun-qfor/common-lib#v1.2",
-      "directUrl": "https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@raw.githubusercontent.com/arun-qfor/common-lib/v1.2/package.json"
-    }
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#aa460289b45b51e7cc5ad33213e19779cf7e6f67",
-  "_shasum": "013560d04111fbe8eb0dea8bbe297242fec52155",
-  "_shrinkwrap": null,
-  "_spec": "common-lib@git+https://arun-qfor:3a001e788a211134ebfa324465bf48c06a4a9fae@github.com/arun-qfor/common-lib.git#v1.2",
-  "_where": "/var/www/html/fs-root-webapp",
-  "author": {
-    "name": "arun@gmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/arun-qfor/custom-lib/issues"
-  },
-  "dependencies": {},
+  "name": "common-lib",
+  "version": "1.0.0",
   "description": "How to build libraries with Angular (2, 4, 5...)",
-  "devDependencies": {},
-  "gitHead": "aa460289b45b51e7cc5ad33213e19779cf7e6f67",
-  "homepage": "https://github.com/arun-qfor/custom-lib#readme",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun-qfor/custom-lib"
+  },
   "keywords": [
     "Angular",
     "Angular2",
     "Library",
     "Example"
   ],
+  "author": "arun@gmail.com",
   "license": "MIT",
-  "main": "index.ts",
-  "name": "common-lib",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arun-qfor/custom-lib.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "types": "index.d.ts",
-  "version": "1.0.0"
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "core-js": "^2.4.1",
+    "datatables.net": "^1.10.16",
+    "datatables.net-autofill": "^2.2.2",
+    "datatables.net-autofill-dt": "^2.2.2",
+    "datatables.net-bs": "^1.10.16",
+    "datatables.net-buttons": "^1.5.1",
+    "datatables.net-buttons-dt": "^1.5.1",
+    "datatables.net-colreorder": "^1.4.1",
+    "datatables.net-colreorder-dt": "^1.4.1",
+    "datatables.net-dt": "^1.10.16",
+    "datatables.net-fixedheader": "^3.1.3",
+    "datatables.net-rowgroup": "^1.0.2",
+    "datatables.net-rowgroup-dt": "^1.0.2",
+    "datatables.net-rowreorder": "^1.2.3",
+    "datatables.net-select": "^1.2.5",
+    "datatables.net-select-bs": "^1.2.5",
+    "dragula": "^3.7.2",
+    "express": "^4.15.4",
+    "file-saver": "^1.3.3",
+    "font-awesome": "^4.7.0",
+    "free-jqgrid": "^4.15.2",
+    "gzip-js": "^0.3.2",
+    "html2canvas": "^0.5.0-beta4",
+    "ionicons": "^3.0.0",
+    "jquery": "^3.3.1",
+    "jspdf": "^1.3.3",
+    "jszip": "^3.1.5",
+    "lodash": "^4.17.4",
+    "mocha": "^5.0.4",
+    "multer": "^1.3.0",
+    "mydatepicker": "^2.0.25",
+    "ng-password-strength": "^0.3.0",
+    "ng2-charts": "^1.5.0",
+    "ng2-dnd": "^4.2.0",
+    "ng2-dragula": "^1.5.0",
+    "ng2-password-strength-bar": "^1.2.0",
+    "ng2-select2": "^1.0.0-beta.10",
+    "ng2-slim-loading-bar": "^4.0.0",
+    "ng2-toastr": "^4.1.2",
+    "ng2-validation": "^4.2.0",
+    "ngx-breadcrumbs": "0.0.3",
+    "node-gyp": "^3.6.2",
+    "node-loader": "^0.6.0",
+    "pdfmake": "^0.1.35",
+    "popper.js": "^1.12.9",
+    "primeng": "^4.1.0",
+    "raphael": "^2.2.7",
+    "rxjs": "5.5.2",
+    "save-svg-as-png": "^1.2.0",
+    "select2": "^4.0.3",
+    "simple-line-icons": "^2.4.1",
+    "typescript": "^2.3.4"
+  },
+  "devDependencies": {
+    "gulp-zip": "^4.0.0",
+    "jasmine-core": "~2.5.2",
+    "jasmine-spec-reporter": "~3.2.0",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "ng2-material-dropdown": "0.7.10",
+    "protractor": "~5.1.0",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0"
+  }
 }
