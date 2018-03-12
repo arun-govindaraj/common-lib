@@ -1,0 +1,86 @@
+{
+	"type": "datacollection",
+	"name": "FTP_grpm_datacollection",
+	"context": {
+		"name": "FTP_grpm_datacollection",
+		"version": {
+			"major": 1,
+			"minor": 0
+		},
+		"client": {
+			"code": "grpm",
+			"name": "GroupM"
+		},
+		"partner": {
+			"code": "grpm",
+			"type": [
+				"CXTN"
+			]
+		}
+	},
+	"dataCollection": {
+		"delivery": {
+			"type": "s3",
+			"enabled": false,
+			"bucket": "f7-qa",
+			"directory": "grpm/in/v1_0/",
+			"accessDetails": {
+				"accessKeyId": "9ff09bbbf1f1906e20e43b46cb085ccc033333e2a40e10324a018631434a3e56",
+				"secretAccessKey": "3579ea0d438a3fe3f341a103f604e891949401ee21e64991c1548842a5930154fb3941ee5d55b716b0f3ecb3d83491db"
+			},
+			"rules": {
+				"fileExportRule": {
+					"fileName": "CDF_GRPM_US_CTXN_FSVN_20171221000001_QA",
+					"fileFormat": "",
+					"compression": ""
+				}
+			}
+		},
+		"schedule": {
+			"active": true,
+			"type": "datacollection",
+			"public": false,
+			"runOnce": false,
+			"end_date": "2018-02-06",
+			"start_date": "2018-02-06",
+			"runTime": "17:45",
+			"frequency": [{
+				"option": "Daily",
+				"values": []
+			}]
+		},
+		"connector": {
+			"type": "ftp",
+			"files": [
+				""
+			],
+			"accessDetails": {
+				"mode": "active",
+				"port": "",
+				"directory": "",
+				"password": "",
+				"username": "",
+				"host": "",
+				"enabled": true
+			},
+			"rules": {
+				"fileExtractRule": {
+					"fileNamePattern": {
+						"value": "",
+						"operator": ""
+					},
+					"delimiter": "",
+					"fileType": "",
+					"compressionFormat": ""
+				}
+			}
+		},
+		"format": {
+			"parserRule": {
+				"fileType": "",
+				"lineStartsFrom": "",
+				"delimiter": ""
+			}
+		}
+	}
+}

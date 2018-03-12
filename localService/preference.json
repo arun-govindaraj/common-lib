@@ -1,0 +1,171 @@
+{
+  "context": {
+    "client": {
+      "name": "Organisation",
+      "code": "f7admin"
+    },
+    "version": {
+      "minor": 0,
+      "major": 1
+    }
+  },
+  "admin": [
+    {
+      "index": 1,
+      "name": "home",
+      "title": "Home",
+      "selected": false
+    },
+    {
+      "index": 2,
+      "name": "dashboards",
+      "title": "Dashboards",
+      "selected": false
+    },
+    {
+      "index": 3,
+      "name": "reports",
+      "title": "Reports",
+      "selected": false
+    },
+    {
+      "index": 4,
+      "name": "alerts",
+      "title": "Alerts",
+      "selected": false
+    },
+    {
+      "index": 5,
+      "name": "manage",
+      "title": "Manage",
+      "selected": true,
+      "submenu": [
+        {
+          "index": 1,
+          "name": "globaloperations",
+          "title": "Global Operations",
+          "selected": true,
+          "url": "globalAdminUsers",
+          "sideBar":[
+            {
+              "index": 1,
+              "name": "f7adminusers",
+              "title": "F7 Admin Users",
+              "selected": true,
+              "url": "globalAdminUsers",
+              "iconCss":"fa fa-user"
+            },
+            {
+              "index": 2,
+              "name": "featurelist",
+              "title": "Features List",
+              "selected": false,
+              "url": "featureList",
+              "iconCss":"fa fa-list"
+            },
+            {
+              "index": 3,
+              "name": "partnertype",
+              "title": "Partner Types",
+              "selected": false,
+              "url": "partnerType",
+              "iconCss":"fa fa-handshake-o"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "name": "Organizations",
+          "title": "Organizations",
+          "selected": false,
+          "url": "editOrganization",
+          "sideBar":[
+            {
+              "index": 1,
+              "name": "organizations",
+              "title": "Organizations",
+              "selected": true,
+              "url": "",
+              "clientList": true,
+              "iconCss":"fa fa-sitemap",
+              "subsidebar":[
+                {
+                  "index": 1,
+                  "name": "asci",
+                  "title": "Asci",
+                  "selected": true,
+                  "url": "organizationSummary",
+                  "activeicon":"icocn-act"
+                },
+                {
+                  "index": 2,
+                  "name": "dentsu",
+                  "title": "Dentsu",
+                  "selected": false,
+                  "url": "organizationSummary",
+                  "activeicon":""
+                },
+                {
+                  "index": 3,
+                  "name": "btil",
+                  "title": "BTIL",
+                  "selected": false,
+                  "url": "organizationSummary",
+                  "activeicon":""
+                },
+                {
+                  "index": 4,
+                  "name": "grpm",
+                  "title": "IBM",
+                  "selected": false,
+                  "url": "organizationSummary",
+                  "activeicon":""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "name": "SmartContracts",
+          "title": "Smart Contracts",
+          "selected": false,
+          "url": ""
+        },
+        {
+          "index": 4,
+          "name": "Users",
+          "title": "Users",
+          "selected": false,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "profile",
+      "title": "",
+      "submenu": [
+        {
+          "index": 1,
+          "name": "userpreferences",
+          "title": "User Preferences",
+          "url":""
+        },
+        {
+          "index": 2,
+          "name": "resetpassword",
+          "title": "Reset Password",
+          "url":"password",
+          "queryValue":{"type":"resetPassword"}
+        },
+        {
+          "index": 3,
+          "name": "logout",
+          "title": "Log Out",
+          "url":""
+        }
+      ]
+    }
+  ]
+}

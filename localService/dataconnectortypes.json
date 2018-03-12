@@ -1,0 +1,121 @@
+{
+  "FrequencyTypes": [
+    {
+      "key": "daily",
+      "displytext": "Daily"
+    },
+    {
+      "key": "weekly",
+      "displytext": "Weekly"
+    },
+    {
+      "key": "monthly",
+      "displytext": "Monthly"
+    },
+    {
+      "key": "quarterly",
+      "displytext": "Quarterly"
+    }
+  ],
+  "ConnectorTypes": [
+    {
+      "key": "api",
+      "displytext": "API"
+    },
+    {
+      "key": "email",
+      "displytext": "Email"
+    },
+    {
+      "key": "ftp",
+      "displytext": "FTP"
+    },
+    {
+      "key": "s3",
+      "displytext": "S3"
+    },
+    {
+      "key": "tag",
+      "displytext": "Tag"
+    }
+  ],
+  "Filetypes": [
+    {
+      "key": "csv",
+      "displytext": "CSV"
+    },
+    {
+      "key": "tsv",
+      "displytext": "TSV"
+    }
+  ],
+  "Compressionformats": [
+    {
+      "key": "zip",
+      "displytext": "ZIP"
+    }
+  ],
+  "Delimeters": [
+    {
+      "key": "comma",
+      "displytext": "Comma"
+    }
+  ],
+  "Matches": [
+    {
+      "key": "contains",
+      "displytext": "Contains"
+    },
+    {
+      "key": "equals",
+      "displytext": "Equals To"
+    },
+    {
+      "key": "startsWith",
+      "displytext": "Starts With"
+    },
+    {
+      "key": "endsWith",
+      "displytext": "Ends With"
+    }
+  ],
+  "apitag": [
+    {
+      "key": "criteo",
+      "displytext": "Criteo"
+    },
+    {
+      "key": "rocketfuel",
+      "displytext": "Rocketfuel"
+    }
+  ],
+  "email": [
+    {
+      "key": "outlook",
+      "displytext": "Outlook"
+    },
+    {
+      "key": "gmail",
+      "displytext": "Gmail"
+    },
+    {
+      "key": "yahoo",
+      "displytext": "Yahoo"
+    }
+  ],
+  "outlook":
+    {
+      "port": "110",
+      "host": "outlook.office365.com"
+    },
+  "gmail":
+    {
+      "port": "993",
+      "host": "smtp.gmail.com"
+    },
+  "yahoo":
+    {
+      "port": "465",
+      "host": "mail.yahoo.com"
+    }
+}
