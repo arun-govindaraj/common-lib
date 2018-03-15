@@ -1,0 +1,56 @@
+/***FONT family****/
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+$tertiary-font: 'Arimo', sans-serif;
+
+/*********Font Size*************/
+$font-primary: 14px;
+$font-small: 10px;
+$font-normal: 16px;
+$font-large: 22px;
+
+
+/******Text color**********/
+$primary-color: #44505B;
+$secondary-color: #cbcbcb;
+$tertiary-color: #fff;
+$quaternary-color: #384349;
+$quinary-color: #3FA8F4;
+$senary-color: #f3f3f3;
+$septenary-color: #1c252b;
+
+// /******Background color**********/
+$primary-bg: $quaternary-color;
+$secondary-bg: $quinary-color;
+$tertiary-bg: $tertiary-color;
+$quaternary-bg: #fcfcfc;
+$quinary-bg: $senary-color;
+$senary-bg: $septenary-color;
+// $septenary-color:
+
+// /******Border color**********/
+$primary-border: $secondary-color;
+$secondary-border: $tertiary-color;
+$tertiary-border: $quaternary-color;
+$quaternary-border: $quinary-color;
+$quinary-border: $senary-color;
+$senary-border: #5FA1DE;
+
+
+//Breadcrumb Component
+$inactive-color: #414C51;
+$active-color: #3FA8F4;
+
+//checkbox
+$check-color: $quinary-color;
+$check-bg: $quinary-color;
+$check-border: $quinary-color;
+
+$form-invalid-color: #a94442;
+$form-invalid-border: #a94442;
+$form-valid-border: #42A948;
+
+//table Grid
+$grid-button-option: $quinary-color;
+$grid-column-visible-checkbox-color: $quinary-color;
+$grid-column-visible-checkbox-font: $font-normal;

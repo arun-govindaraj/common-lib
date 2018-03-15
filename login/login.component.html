@@ -1,0 +1,58 @@
+<div class="login-page">
+    <div class="row">
+        <div class="login-wrap col-lg-5 col-md-8 col-sm-10">
+          <div class="login-logo col-lg-6 col-md-6 col-sm-6 pull-left">
+            <img src="/assets/images/f7_logo.png" alt="logo" />
+          </div>
+          <div class="login-form col-lg-6 col-md-6 col-sm-6 pull-right" >
+                <form role="form" name="loginForm" (ngSubmit)="onLoggedin()">
+                    <div class="form-content">
+                        <div class="form-group right-addon">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" [(ngModel)]="email" class="form-fields"
+                                   placeholder="E-mail" name="email" value="" #emailVal="ngModel"
+                                   required>
+                            <p class="valid-msg" *ngIf="emailVal.touched && emailVal.errors?.required">
+                                Required Email</p>
+                        </div>
+                        <div class="form-group right-addon">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" [(ngModel)]="password" name="password"
+                                   class="form-fields" placeholder="Password"
+                                   #passwordVal="ngModel" required/>
+                            <p class="valid-msg" *ngIf="passwordVal.touched && passwordVal.errors?.required">
+                                Required Password</p>
+                        </div>
+
+                    </div>
+                    <div class="checkbox pull-left">
+                      <label (click)="handleCustomcheckBox($event)"><input type="checkbox" [checked]="saveLogin"> Save login</label>
+                    </div>
+                    <button type="submit" class="btn-primary btn-login pull-right"> Login </button>
+                 </form>
+                 <a href="javascript:void()" title="forgot password" class="login-forgot-link" (click)="forgotPassword($event)">Forgot Password</a>
+          </div>
+          <div class="login-form col-lg-6 col-md-6 col-sm-6 pull-right forgotvisible">
+            <form role="form" name="forgotPasswordForm" (ngSubmit)="onForgotPassword()" [formGroup]="forgatPasswordForm">
+              <label for="femail" class="pull-left">Forgot Password</label>
+                <div class="form-content">
+                    <div class="form-group right-addon">
+                        <i class="fa fa-envelope"></i>
+                        <input type="femail" [(ngModel)]="femail" class="form-fields"
+                               placeholder="E-mail" name="femail" value=""  formControlName="Email"
+                               required>
+                        <!--<p class="valid-msg" *ngIf="femailVal.touched && femailVal.errors?.required">
+                            Required Email</p>-->
+                        <div  class="valid-msg"  *ngIf="forgatPasswordForm.get('Email').hasError('required') && forgatPasswordForm.get('Email').touched">
+                          Email is required
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary btn-login pull-right"> Send </button>
+                <span class="pull-right">&nbsp;&nbsp;</span>
+                <button type="submit" class="btn-primary btn-login pull-right" (click)="forgotPassword($event);"> Cancel </button>
+             </form>
+          </div>
+      </div>
+    </div>
+</div>

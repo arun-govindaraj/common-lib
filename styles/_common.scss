@@ -1,0 +1,271 @@
+div.dt-button-background{
+  display: none !important;
+}
+//Button section
+.btn-primary{
+  color: $tertiary-color;
+  font-size: 14px;
+  background: $secondary-bg;
+  border-radius: 0px;
+  padding: 5px 15px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  border: 1px solid $senary-border;
+  min-width: 70px;
+  font-family: $secondary-font;
+}
+
+//Form Field Section
+.form-fields {
+    padding: 7px;
+    border: 1px solid $primary-border !important;
+    color: $primary-color !important;
+    width: 100%;
+    background: $quaternary-bg !important;
+    border-radius: 4px 2px 2px 4px !important;
+    border-left-width: 5px !important;
+    &:focus{
+      border-color: $senary-border !important;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    }
+    &.ng-invalid.ng-untouched,&.ng-invalid.ng-dirty,&.ng-valid.ng-untouched{
+      border-color: $primary-border !important;
+    }
+    &.ng-invalid.ng-touched{
+      border-color: $form-invalid-border !important;
+      &:hover + .valid-msg{
+        opacity: 1;
+        transform:translate(0);
+      }
+    }
+    &.ng-valid.ng-touched.ng-dirty  {
+      border-color: $form-valid-border !important;
+    }
+}
+.form-group{
+  position: relative;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  width: 220px;
+  margin-bottom: 0;
+  .valid-msg{
+    position: absolute;
+    color: $form-invalid-color;
+    background-color: #f2dede;
+    margin: 0;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 5px 15px;
+    width: auto;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    bottom: 45px;
+    left: 20%;
+    z-index: 10;
+    opacity: 0;
+    text-align: left;
+    min-width: 190px;
+    max-width: 400px;
+    transform:translate(199px);
+    -webkit-transform:translate(199px);
+    &:before{
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: -11px;
+      background: none;
+      line-height: 7px;
+      color: #ebccd1;
+      border-top: 10px solid #ebccd1;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+  }
+}
+.table-content{
+  padding-right: 50px;
+  .dataTables_filter{
+    & +.dt-buttons{
+      top: 33px;
+    }
+  }
+  .dt-buttons{
+    position: absolute;
+    right: -47px;
+    button{
+      padding: 0;
+      border: none;
+      background: none;
+      font-size: $font-large;
+      color: $grid-button-option;
+      &:hover,&:active,&:focus{
+        border: none;
+        background: none;
+        box-shadow: inherit;
+      }
+    }
+    .dt-button-collection{
+      left: inherit !important;
+      right: 0 !important;
+      button{
+        line-height: 15px;
+        text-align: left;
+        padding-left: 25px !important;
+        &:first-of-type{
+          display: none;
+        }
+        &:before{
+          content: "\F096";
+          position: absolute;
+          left: 1px;
+          top: 1px;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: $grid-column-visible-checkbox-font;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          width: auto;
+          height: auto;
+          color: $grid-column-visible-checkbox-color;
+        }
+        &.active:before{
+          content: "\F046";
+        }
+        &.buttons-colvisRestore{
+          &:before{
+            content: "";
+          }
+          text-align: center;
+          border: $quaternary-border 1px solid;
+          padding: 5px;
+        }
+        span{
+          color: $primary-color !important;
+          font-size: $font-primary;
+        }
+      }
+    }
+  }
+  &.feature-content .dt-buttons{
+    top: -25px;
+  }
+  #gridtable{
+    overflow: hidden;
+    thead{
+      th.dt-not-search{
+        width: 20px !important;
+      }
+      th{
+        padding: 6px 25px 6px 10px;
+        width: auto !important;
+      }
+    }
+    tr td.dt-body-left{
+      span{
+        display: none;
+      }
+    }
+    tfoot{
+      height: auto !important;
+      display: none;
+      th{
+        padding: 6px 25px 6px 10px;
+      }
+      tr{
+      //   transform: translate(0,-40px);
+      //   -webkit-transform: translate(0,-40px);
+      //   transition: all 1s;
+      //   -webkit-transition: all 1s;
+        display: table-row;
+        th,td{
+          border: none;
+          input{
+            font-size: $font-primary;
+            font-weight: normal;
+          }
+        }
+      }
+      &.active{
+        display: table-header-group;
+      }
+    }
+    tbody{
+      td{
+
+      }
+    }
+  }
+}
+#gridtable tr{
+  td.dt-not-search:first-of-type,th.dt-not-search.selectAll:first-of-type{
+  position: relative;
+  width: 20px !important;
+  span{
+    display: none;
+  }
+  i{
+    opacity: 1 !important;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  input{
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 5px;
+    top: -3px;
+    z-index: 100;
+    cursor: pointer;
+    &:checked + i{
+      &:before{
+        content: "\F046";
+      }
+    }
+  }
+  }
+}
+
+#gridtable tr td.dataTables_empty:first-of-type{
+  display: table-cell;
+  text-align: center;
+  color: $primary-color;
+  &:before{
+    content: "";
+  }
+}
+table.dataTable{
+  thead .sorting,thead .sorting_asc,thead .sorting_asc,thead .sorting_desc,.dt-not-search.sorting_1{
+    background: none !important;
+  }
+  tbody tr.selected{
+    background: rgba(0,133,199,0.5) !important;
+    color: $primary-color !important;
+  }
+
+}
+
+.dataTables_paginate{
+  ul.pagination{
+    margin: 0 !important;
+    li.paginate_button {
+      padding: 0 ;
+      &:hover{
+        border-color: $secondary-border;
+        background: none;
+      }
+    }
+  }
+}
+.dataTables_length{
+  margin-top: 20px !important;
+  color: $primary-color;
+}
+.slim-loading-bar-progress{
+  height: 5px !important;
+}

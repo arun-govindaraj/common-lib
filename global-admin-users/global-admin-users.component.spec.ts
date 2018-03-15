@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HelloComponent } from './hello.component';
+import { GlobalAdminUsersComponent } from './global-admin-users.component';
 
-describe('HelloComponent', () => {
-  let component: HelloComponent;
-  let fixture: ComponentFixture<HelloComponent>;
+describe('GlobalAdminUsersComponent', () => {
+  let component: GlobalAdminUsersComponent;
+  let fixture: ComponentFixture<GlobalAdminUsersComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HelloComponent ]
+      declarations: [ GlobalAdminUsersComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HelloComponent);
+    fixture = TestBed.createComponent(GlobalAdminUsersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

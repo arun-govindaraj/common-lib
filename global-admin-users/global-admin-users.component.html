@@ -1,0 +1,15 @@
+<div class="main-content">
+  <a routerLink="/adminUser" (click)="pgContentChange()"><button type="button" id="addRow" class="btn">Add</button></a>
+  <button type="button" id="removeBtn" (click)="handleDelete()" class="btn">Remove</button>
+  <div class="clearfix"></div>
+  <!-- <div *ngIf="isDataAvailable"> -->
+  <div class="table-content">
+    <div *ngIf="isDataAvailable">
+        <app-data-table (filterValues)="refreshData($event)" [data]="gridData"></app-data-table>
+    </div>
+    <div class="page-header" *ngIf="!isDataAvailable">
+      <h4>Loading data...</h4>
+    </div>
+  </div>
+</div>
+<!-- <router-outlet *ngIf="!pgChange"></router-outlet> -->

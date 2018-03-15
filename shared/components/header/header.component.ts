@@ -3,7 +3,8 @@ import { Router, NavigationEnd, RouterLinkActive } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import {Common} from '../../util/common';
 import {ToastsManager} from 'ng2-toastr/ng2-toastr';
-import {AuthService} from '../../../services/auth';
+import * as preference from '../../../../localService/preference.json';
+import {AuthService} from '../../../../services/auth';
 
 @Component({
     selector: 'app-header',
@@ -112,4 +113,3 @@ export class HeaderComponent implements OnInit {
 
 
 }
-
